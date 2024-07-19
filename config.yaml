@@ -1,0 +1,43 @@
+env: local
+server:
+  #  host: 0.0.0.0
+  host: 127.0.0.1
+  port: 1534
+  prefix: /api
+security:
+  api_sign:
+    app_key: 123456
+    app_security: 123456
+jwt:
+  key: QQYnRFerJTSEcrfB89fw8prOaObmrch8
+
+mysql:
+#  dsn: 用户名:密码@tcp(127.0.0.1:3306)/数据库名?charset=utf8mb4&parseTime=True&loc=Local
+  dsn: test:test@tcp(127.0.0.1:3306)/test?charset=utf8mb4&parseTime=True&loc=Local
+  debug: True
+redis:
+  addr: 127.0.0.1:6379
+  password: ""
+  db: 0
+  read_timeout: 0.2s
+  write_timeout: 0.2s
+
+log:
+  log_level: debug
+  log_file_name: "./logs/server.log"
+  max_backups: 30
+  max_age: 7
+  max_size: 1024
+  compress: true
+
+minio:
+  endpoint: 111.231.7.111:9000
+  access_key_id: VUnnvnu0YyPTYEUUwtF3
+  secret_access_key: TNs5BHlrU2GSBZSCm0cGJ3pn0A1gkfWPPx3VkpT6
+  bucket_name: vote
+  use_ssl: false
+
+cas:
+  ticket_check_url: https://idaas-idp.hbut.edu.cn/sso/tn-b6844f43ad554d15aaa73f4ed4319a52/ai-7e6c5ebc17ba452f938f2c143ddd4114/cas/serviceValidate
+  redirect_url: https://vote.renranz.cn/skip
+#  redirect_url: http://localhost:3774/skip
