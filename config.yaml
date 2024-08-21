@@ -31,13 +31,8 @@ log:
   compress: true
 
 minio:
-  endpoint: 111.231.7.111:9000
-  access_key_id: VUnnvnu0YyPTYEUUwtF3
-  secret_access_key: TNs5BHlrU2GSBZSCm0cGJ3pn0A1gkfWPPx3VkpT6
-  bucket_name: vote
+  endpoint: xx.xx.xx.xx:9000
+  access_key_id: xxxxxxxxxxxxxxxxxxxxxxx
+  secret_access_key: xxxxxxxxxxxxxxxxxxxx
+  bucket_name: xx
   use_ssl: false
-
-cas:
-  ticket_check_url: https://idaas-idp.hbut.edu.cn/sso/tn-b6844f43ad554d15aaa73f4ed4319a52/ai-7e6c5ebc17ba452f938f2c143ddd4114/cas/serviceValidate
-  redirect_url: https://vote.renranz.cn/skip
-#  redirect_url: http://localhost:3774/skip
