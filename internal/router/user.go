@@ -47,7 +47,7 @@ func loginHandler(c *gin.Context) {
 		return
 	}
 
-	if err := db.DB.Select("id, user, password").Where("username = ? ADN password = ?", p.Username, p.Password).Take(&user).Error; err != nil {
+	if err := db.DB.Select("id, username, password").Where("username = ? ADN password = ?", p.Username, p.Password).Take(&user).Error; err != nil {
 		c.JSON(http.StatusOK, v1.Response{
 			Code:    400,
 			Message: "用户名或密码错误",
