@@ -1,0 +1,38 @@
+[Server]
+Env = "dev"
+Host = "127.0.0.1"
+Port = 1534
+Prefix = "/api"
+
+[JWT]
+Key = "QQYnRFerJTSEcrfB89fw8prOaObmrch8"
+
+[Mysql]
+User = "root"
+Password = "*********"
+Database = "easy_admin"
+Addr = "127.0.0.1:3306"
+Other = "charset=utf8mb4&parseTime=True&loc=Local"
+Debug = true
+
+[Redis]
+Addr = "127.0.0.1:6379"
+Password = ""
+Database = 0
+ReadTimeout = "0.2s"
+WriteTimeout = "0.2s"
+
+[log]
+Level = "debug"
+FilePath = "logs/server.log"
+MaxBackups = 30
+MaxAge = 7
+MaxSize = 1024
+Compress = true
+
+[Minio]
+Endpoint = "xx.xx.xx.xx:9000"
+AccessKeyId = "xxxxxxxx"
+SecretAccessKey = "xxxxxxx"
+BucketName = "xxxx"
+UseSSL = false
